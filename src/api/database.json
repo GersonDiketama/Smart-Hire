@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Gerson",
+      "email": "g@test.com",
+      "userTypeId": 1
+    },
+    {
+      "id": 2,
+      "name": "Some Ceo",
+      "email": "g@test.com",
+      "userTypeId": 2
+    }
+  ],
+  "userTypes": [
+    {
+      "id": 1,
+      "type": "recruiter"
+    },
+    {
+      "id": 2,
+      "type": "employer"
+    }
+  ],
+  "employerRequests": [
+    {
+      "company_Name": "sadsd",
+      "service_Type": "sdsad",
+      "city": "dsad",
+      "description": "sdsa",
+      "zip_Code": "asdsd",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "company_Name": "fdsfsdfsd",
+      "service_Type": "dsfds",
+      "city": "dsfsdf",
+      "description": "sdfsdfs",
+      "zip_Code": "dfsdfsf"
+    }
+  ],
+  "recruiterJobPosts": [],
+  "employementResumes": []
+}

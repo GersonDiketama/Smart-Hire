@@ -7,10 +7,10 @@ The concept is simple, a employer will send a help request with one click and th
 
 # SMART HIRE Tech Stack
 
-** React js
-** Material Ui
-** CSS3
-** JSON-SERVER
+* React js
+* Material Ui
+* CSS3
+* JSON-SERVER
 
 # SMART HIRE USAGE
 

@@ -16,6 +16,6 @@ The concept is simple, a employer will send a help request with one click and th
 Clone this Repo and in your terminal do npm install to download all the needed dependecies
 Make sure you have JSON-SERVER installed in order to use this project.
 
-##Contributions
+## Contributions
 
 Contributions are welcome for this project, just make to leave a comment first for the feature you want to add or if there is any bug you want to fix.

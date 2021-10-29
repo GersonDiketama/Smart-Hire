@@ -1,53 +1,57 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Button from "@mui/material/Button";
-import recruiterManager from "./RecruitersManager";
-const RecruiterCards = ({ data, setSelectedCompany, selectedCompany }) => {
-    <h2 className="card_header">Clients Requests</h2>
-  return (
-    <div>
-      <Button onClick={() => setSelectedCompany(data)} variant="contained">
-        <section>
-          <h1>{data.company_Name}</h1>
-          <p>{data.service_Type}</p>
-        </section>
-      </Button>
+import { useHistory } from "react-router";
+import "./recruiterStyle.css"
 
-      <div>
-    {selectedCompany ? (
-        <CompanyDetails key={data.id} company={selectedCompany} />
-      ) : (
-        ""
-      )}
-      </div>
+
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+
+import Typography from '@mui/material/Typography';
+
+const RecruiterCards = ({ data, setSelectedCompany, selectedCompany }) => {
+
+  
+      <h2 className="card_header">Clients Requests</h2>
+
+        const history = useHistory()
+
+      
+
+  return (
+    <div className="get_Employer_Service_Post">
+  
+    <Card sx={{ minWidth: -29 }} variant="outlined">
+      <CardContent>
+        {/* <Typography component="div" variant="h5" sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
+        {data.company_Name}
+        </Typography> */}
+        <Typography variant="h5" component="div">
+        {data.company_Name}
+        </Typography>
+        <Typography sx={{ mb: 1.5 }} color="text.secondary">
+          {data.service_Type}
+        </Typography>
+        <Typography variant="body2">
+          {data.description}
+          <br />
+          {/* {'"a benevolent smile"'} */}
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small" onClick={() => history.push(`${data.id}`) } variant="contained">More Information</Button>
+      </CardActions>
+    </Card>
+  
+
       
     </div>
  
   );
 };
 
-const CompanyDetails = ({ company }) => {
-  const [companyDetails, setComapanyDetails] = useState(null);
 
-  useEffect(() => {
-    recruiterManager
-      .getEmployersResquestsById(company.id)
-      .then((employerDatas) => setComapanyDetails(employerDatas));
-  }, [company]);
-
-  if (!companyDetails) {
-    return <div>Loading...</div>;
-  }
-
-  return (
-    <div>
-      {companyDetails && (
-        <>
-          <h3>{companyDetails.service_Type}</h3>
-          <Button variant="contained">Send Invitation</Button>
-        </>
-      )}
-    </div>
-  );
-};
 
 export default RecruiterCards;

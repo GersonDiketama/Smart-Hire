@@ -1,6 +1,14 @@
-import { Button } from "@mui/material";
-import React,{useEffect} from "react";
+
+import React from "react";
 import { useHistory } from "react-router";
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+
+
+
 
 const EmployerCard = ({ viewRequest, deletePost}) => {
   const history = useHistory();
@@ -9,14 +17,25 @@ const EmployerCard = ({ viewRequest, deletePost}) => {
 
   return (
     <div>
-      <div>
-        <h1>Sent Requests</h1>
-      </div>
 
-      <h3>{viewRequest.company_Name}</h3>
-      <p>{viewRequest.service_Type}</p>
-      <p>{viewRequest.city}</p>
-      <p>{viewRequest.description}</p>
+    <Card sx={{ minWidth: 275 }} variant="outlined">
+      <CardContent>
+        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+          Word of the Day
+        </Typography>
+        <Typography variant="h5" component="div">
+        {viewRequest.company_Name}
+        </Typography>
+        <Typography sx={{ mb: 1.5 }} color="text.secondary">
+        {viewRequest.service_Type}
+        </Typography>
+        <Typography variant="body2">
+        {viewRequest.city}
+          <br />
+        </Typography>
+        <Typography>{viewRequest.description}</Typography>
+      </CardContent>
+      <CardActions>
       <Button variant="contained" onClick={() => deletePost(viewRequest.id)}>
         Delete
       </Button>
@@ -27,6 +46,9 @@ const EmployerCard = ({ viewRequest, deletePost}) => {
         }>
         Edit
       </Button>
+      </CardActions>
+    </Card>
+
     </div>
   );
 };

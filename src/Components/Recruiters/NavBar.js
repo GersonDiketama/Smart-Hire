@@ -1,10 +1,17 @@
 import React from 'react'
 import { Link} from 'react-router-dom'
+import { useHistory } from 'react-router'
+import Button from "@mui/material/Button";
 
 
 const NavBar = () => {
+
+    const history = useHistory()
+
+    const sessionToRemove = ["app_user_id", "userTypeKey"]
+
     return (
-        <div>
+        <div className="nav_bar">
         
             <li>
             <Link to ="/">Home</Link>
@@ -21,7 +28,15 @@ const NavBar = () => {
             <li>
             <Link to ="/settings">Settings</Link>
             </li>
-    
+
+            <li className="nav__item">
+          <Button variant="contained" className="nav__button" onClick={() => {
+              for (const key of sessionToRemove)
+              {
+            sessionStorage.removeItem(key);
+            history.push("/login")}
+        }}>Logout</Button>
+        </li>
         </div>
     )
 }

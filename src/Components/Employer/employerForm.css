@@ -11,12 +11,19 @@
     display: flex;
     justify-content: center;
     padding: 20px;
+    background-color: cyan;
 }
 
 .nav-bar li{
     list-style: none;
     padding: 30px;
     text-decoration: none;
+    
+}
+
+.nav-bar li:hover
+{
+    transform: scale(1.2);
 }
 
 .nav-bar a{
@@ -26,11 +33,7 @@
 
 
 
-.Form-input
-{
-    
-    
-}
+
 
 .input-styles
 {

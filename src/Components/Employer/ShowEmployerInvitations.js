@@ -18,7 +18,7 @@ const ShowEmployerInvitations = () => {
   };
 
   
-
+//Is just a function call
   useEffect(() => {
     getEmployerSentRequests();
   }, []);

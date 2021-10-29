@@ -42,6 +42,7 @@ const EditEmployerPost = () => {
         .then(() => history.push("/sent_invitations"))
     }
 
+    //WE NEED THIS USE EFFECT TO UPDATE/ REACT TO EACH SPECIFIC EDIT IN AN ID
     useEffect(() =>
     {
         employerDataManager.getEmployerPostById(viewRequestId)

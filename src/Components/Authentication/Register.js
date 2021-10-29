@@ -1,11 +1,11 @@
 import React, { useState } from "react"
 import { useHistory } from "react-router-dom"
 import { authApi, userStorageKey } from "./Login"
-// import "./Login.css"
+import "./auth.css"
 
 export const Register = () => {
 
-    const [registerUser, setRegisterUser] = useState({ firstName: "", lastName: "", email: "" })
+    const [registerUser, setRegisterUser] = useState({ firstName: "", lastName: "", email: "" , userTypeId:[1,2,3]})
     const [conflictDialog, setConflictDialog] = useState(false)
 
     const history = useHistory()
@@ -36,6 +36,7 @@ export const Register = () => {
                         },
                         body: JSON.stringify({
                             email: registerUser.email,
+                            userTypeId: registerUser.userTypeId,
                             name: `${registerUser.firstName} ${registerUser.lastName}`
                         })
                     })
@@ -56,7 +57,7 @@ export const Register = () => {
     }
 
     return (
-        <main style={{ textAlign: "center" }}>
+        <main style={{ textAlign: "center" }} className="register-form">
 
             <dialog className="dialog dialog--password" open={conflictDialog}>
                 <div>Account with that email address already exists</div>
@@ -77,6 +78,19 @@ export const Register = () => {
                     <label htmlFor="inputEmail"> Email address </label>
                     <input type="email" name="email" id="email" className="form-control" placeholder="Email address" required value={registerUser.email} onChange={handleInputChange} />
                 </fieldset>
+                <fieldset>
+                <label>Recruiter</label>
+                <input value={registerUser.userTypeId[0]} id="userTypeId" type="checkbox" onChange={handleInputChange}/>
+
+                <label>Employer</label>
+                <input value={registerUser.userTypeId[1]} id="userTypeId" type="checkbox" onChange={handleInputChange}/>
+
+                <label>Employee</label>
+                <input value={registerUser.userTypeId[2]} id="userTypeId" type="checkbox" onChange={handleInputChange}/>
+
+                </fieldset>
+
+
                 <fieldset>
                     <button type="submit"> Sign in </button>
                 </fieldset>

@@ -9,7 +9,7 @@
     {
       "id": 2,
       "name": "Some Ceo",
-      "email": "g@test.com",
+      "email": "ceo@test.com",
       "userTypeId": 2
     }
   ],
@@ -25,20 +25,86 @@
   ],
   "employerRequests": [
     {
-      "company_Name": "sadsd",
-      "service_Type": "sdsad",
-      "city": "dsad",
-      "description": "sdsa",
-      "zip_Code": "asdsd",
-      "id": 1
+      "id": 1,
+      "company_Name": "Paris-Saint Germain",
+      "service_Type": "Need a Manager",
+      "city": "Paris",
+      "description": "We need a manager for our restaurants, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porta tristique est, non scelerisque felis vulputate ut. Nam tellus libero, congue id sodales sed, consectetur vitae lorem. Sed ut auctor nisi, a efficitur elit. Nam faucibus pulvinar vehicula. Donec varius sem ac posuere dapibus. In hac habitasse platea dictumst. Proin pulvinar euismod orci ac venenatis. Sed molestie, libero nec fringilla luctus, libero diam viverra arcu, sed vehicula turpis lectus ac lorem. In aliquam et metus volutpat consectetur. Aenean sed congue urna.",
+      "zip_Code": "78800"
     },
     {
       "id": 2,
-      "company_Name": "fdsfsdfsd",
-      "service_Type": "dsfds",
-      "city": "dsfsdf",
-      "description": "sdfsdfs",
-      "zip_Code": "dfsdfsf"
+      "company_Name": "Google",
+      "service_Type": "Junior Front End Dev",
+      "city": "Dallas",
+      "description": "We need help hiring junior dev, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porta tristique est, non scelerisque felis vulputate ut. Nam tellus libero, congue id sodales sed, consectetur vitae lorem. Sed ut auctor nisi, a efficitur elit. Nam faucibus pulvinar vehicula. Donec varius sem ac posuere dapibus. In hac habitasse platea dictumst. Proin pulvinar euismod orci ac venenatis. Sed molestie, libero nec fringilla luctus, libero diam viverra arcu, sed vehicula turpis lectus ac lorem. In aliquam et metus volutpat consectetur. Aenean sed congue urna.",
+      "zip_Code": "78741"
+    },
+    {
+      "company_Name": "Netflix",
+      "service_Type": "Mid-Level Dev PHP",
+      "city": "Austin",
+      "description": "Please we need a help, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porta tristique est, non scelerisque felis vulputate ut. Nam tellus libero, congue id sodales sed, consectetur vitae lorem. Sed ut auctor nisi, a efficitur elit. Nam faucibus pulvinar vehicula. Donec varius sem ac posuere dapibus. In hac habitasse platea dictumst. Proin pulvinar euismod orci ac venenatis. Sed molestie, libero nec fringilla luctus, libero diam viverra arcu, sed vehicula turpis lectus ac lorem. In aliquam et metus volutpat consectetur. Aenean sed congue urna.",
+      "zip_Code": "78741",
+      "id": 4
+    },
+    {
+      "company_Name": "Google",
+      "service_Type": "Junior Dev",
+      "city": "Austin",
+      "description": "uhsdbfsdhfhisdfsdf",
+      "zip_Code": "",
+      "id": 5
+    }
+  ],
+  "recruiterInvitation": [
+    {
+      "recruiter_name": "Gerson",
+      "years_of_experience": "6",
+      "state": "Tx",
+      "city": "Austin",
+      "description": "I can definitively help with that, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porta tristique est, non scelerisque felis vulputate ut. Nam tellus libero, congue id sodales sed, consectetur vitae lorem. Sed ut auctor nisi, a efficitur elit. Nam faucibus pulvinar vehicula. Donec varius sem ac posuere dapibus. In hac habitasse platea dictumst. Proin pulvinar euismod orci ac venenatis. Sed molestie, libero nec fringilla luctus, libero diam viverra arcu, sed vehicula turpis lectus ac lorem. In aliquam et metus volutpat consectetur. Aenean sed congue urna.",
+      "phone": "5125798621",
+      "isAccepted": false,
+      "userId": "1",
+      "userType": "1",
+      "id": 2
+    },
+    {
+      "recruiter_name": "Gerson",
+      "years_of_experience": "5",
+      "state": "Texas",
+      "city": "Austin",
+      "description": "I may help, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porta tristique est, non scelerisque felis vulputate ut. Nam tellus libero, congue id sodales sed, consectetur vitae lorem. Sed ut auctor nisi, a efficitur elit. Nam faucibus pulvinar vehicula. Donec varius sem ac posuere dapibus. In hac habitasse platea dictumst. Proin pulvinar euismod orci ac venenatis. Sed molestie, libero nec fringilla luctus, libero diam viverra arcu, sed vehicula turpis lectus ac lorem. In aliquam et metus volutpat consectetur. Aenean sed congue urna.",
+      "phone": "7467456464747",
+      "isAccepted": true,
+      "userId": "1",
+      "userType": "1",
+      "id": 3
+    },
+    {
+      "recruiter_name": "Gerson",
+      "years_of_experience": "10 as recruiter",
+      "state": "Texa",
+      "city": "Asutin",
+      "description": "basjfjsbbsdafdfbsddsjfbdsbfdsdfsdf",
+      "phone": "6363673237",
+      "isAccepted": true,
+      "userId": "1",
+      "userType": "1",
+      "id": 4
+    },
+    {
+      "recruiter_name": "Gerson",
+      "years_of_experience": "7",
+      "state": "texas",
+      "city": "dallas",
+      "description": "i CAN HELP WITH THAT",
+      "phone": "3232233",
+      "isAccepted": true,
+      "userId": "1",
+      "userType": "1",
+      "id": 5
     }
   ],
   "recruiterJobPosts": [],

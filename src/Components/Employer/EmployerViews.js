@@ -4,7 +4,8 @@ import EmployerNavBar from "./EmployerNavBar";
 import { Route } from "react-router-dom";
 import ShowEmployerInvitations from "./ShowEmployerInvitations";
 import EditEmployerPost from "./EditEmployerPost";
-import { Login } from "../Authentication/Login";
+import GetRecruitersInvitations from "./GetRecruitersInvitations";
+
 
 
 export const EmployerViews = () => {
@@ -27,10 +28,15 @@ export const EmployerViews = () => {
         <EditEmployerPost />
       </Route>
 
-      <Route exact path="/login">
-      <Login/>
+      <Route exact path="/recruiter_solicitations">
+        <EmployerNavBar />
+        <GetRecruitersInvitations/>
       </Route>
 
+      
+    
+      
+     
       
     </>
   );

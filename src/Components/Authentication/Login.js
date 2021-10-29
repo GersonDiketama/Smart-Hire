@@ -13,7 +13,7 @@ export const authApi = {
   }
   export const userStorageKey = "app_user_id"
 
-export const Login = () => {
+export const Login = ({isUserType}) => {
     const [loginUser, setLoginUser] = useState({ email: "" })
     const [existDialog, setExistDialog] = useState(false)
 
@@ -46,6 +46,7 @@ export const Login = () => {
                 if (exists) {
                     sessionStorage.setItem(userStorageKey, exists.id)
                     sessionStorage.setItem("userTypeKey", exists.userTypeId)
+                    isUserType()
                     history.push("/")
 
                 } else {
@@ -73,8 +74,10 @@ export const Login = () => {
                             required autoFocus
                             value={loginUser.email}
                             onChange={handleInputChange} />
+                           
                     </fieldset>
                     <fieldset>
+                       
                         <button type="submit">
                             Sign in
                         </button>

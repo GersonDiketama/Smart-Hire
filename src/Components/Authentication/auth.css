@@ -1,0 +1,36 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.register-form
+{
+    display: block;
+    width: 30%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.register-form label
+{
+    color: black;
+    margin-right: 178px;
+}
+
+
+.container--login
+{
+    width: 20%;
+    margin: auto;
+    margin-top: 180px;
+
+}
+
+.container--login label,input, button
+{
+    margin: auto;
+    text-align: center;
+    margin-left: 0px;
+}

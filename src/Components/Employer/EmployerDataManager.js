@@ -40,6 +40,24 @@ const employerDataManager = {
       body: JSON.stringify(postId),
     }).then((res) => res.json());
   },
+
+
+
+  // Handle video call 
+  videoCalling: (id) =>
+
+  {
+    return fetch(`${url}/recruiterInvitation/${id}`,{
+      method:"PATCH",
+      body: JSON.stringify({
+        videCall: true
+      }),
+      headers: {"Content-Type": "application/json"}
+    })
+    .then(res => res.json())
+  }
+
+
 };
 
 export default employerDataManager;

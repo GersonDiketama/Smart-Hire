@@ -11,6 +11,12 @@
       "name": "Some Ceo",
       "email": "ceo@test.com",
       "userTypeId": 2
+    },
+    {
+      "email": "employee@gg.com",
+      "userTypeId": "3",
+      "name": "employee newJob",
+      "id": 3
     }
   ],
   "userTypes": [
@@ -21,7 +27,13 @@
     {
       "id": 2,
       "type": "employer"
+    },
+
+    {
+      "id": 3,
+      "type": "employee"
     }
+
   ],
   "employerRequests": [
     {
@@ -65,7 +77,7 @@
       "city": "Austin",
       "description": "I can definitively help with that, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porta tristique est, non scelerisque felis vulputate ut. Nam tellus libero, congue id sodales sed, consectetur vitae lorem. Sed ut auctor nisi, a efficitur elit. Nam faucibus pulvinar vehicula. Donec varius sem ac posuere dapibus. In hac habitasse platea dictumst. Proin pulvinar euismod orci ac venenatis. Sed molestie, libero nec fringilla luctus, libero diam viverra arcu, sed vehicula turpis lectus ac lorem. In aliquam et metus volutpat consectetur. Aenean sed congue urna.",
       "phone": "5125798621",
-      "isAccepted": false,
+      "isAccepted": true,
       "userId": "1",
       "userType": "1",
       "id": 2
@@ -107,6 +119,14 @@
       "id": 5
     }
   ],
-  "recruiterJobPosts": [],
+  "recruiterJobPosts": [
+    {
+      "Company_Name": "Facebook",
+      "Job_Title": "Junior Dev",
+      "Job_Description": "We are the company that moves life",
+      "Requirements": "3 years experience",
+      "id": 1
+    }
+  ],
   "employementResumes": []
 }

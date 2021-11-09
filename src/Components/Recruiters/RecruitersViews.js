@@ -4,6 +4,9 @@ import Home from './Home'
 import { EmployerDetail } from './EmploymentsDetails'
 import SendInvitation from './SendInvitation'
 import GetSolicitationsForRecruiters from './GetSolicitationsForRecruiters'
+import GetRecruitersInvitations from '../Employer/GetRecruitersInvitations'
+import RecruiterJobPost from './RecruiterJobPost'
+import PostedJob from './PostedJob'
 import NavBar from './NavBar'
 
 
@@ -26,7 +29,17 @@ const RecruitersViews = () => {
             
             <Route exact path="/invitations">
                 <NavBar/>
-                <GetSolicitationsForRecruiters/>
+                <GetRecruitersInvitations/>
+            </Route>
+
+            <Route path="/post_job">
+                <NavBar/>
+                <RecruiterJobPost/>
+            </Route>
+
+            <Route exact path="/posted_jobs">
+                <NavBar/>
+                <PostedJob/>
             </Route>
 
         </div>

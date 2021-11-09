@@ -61,6 +61,31 @@ editInvitation: (invitationsId) => {
           }
       })
       .then(res => res.json())
+  },
+
+
+  //Recruiter Job Post
+
+  recruiterJobPost: (jobPost) =>
+  {
+      return fetch(`${url}/recruiterJobPosts`, 
+      {
+          method:"POST",
+          headers:{"Content-Type": "application/json"},
+          body: JSON.stringify(jobPost)
+      }
+      )
+      .then(res => res.json())
+  },
+
+
+
+  //Get Recruiter Job Post
+
+  getRecruiterJobPost: () =>
+  {
+      return fetch(`${url}/recruiterJobPosts`)
+      .then(res => res.json())
   }
 
 };

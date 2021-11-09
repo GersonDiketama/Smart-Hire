@@ -13,6 +13,7 @@ const SendInvitation = () => {
     description: "",
     phone: "",
     isAccepted: false,
+    videoCall: false,
     userId: sessionStorage.getItem("app_user_id"),
     userType: sessionStorage.getItem("userTypeKey"),
   });

@@ -4,6 +4,7 @@ import { EmployerViews } from "../Employer/EmployerViews";
 import { Login } from "../Authentication/Login";
 import { Route } from "react-router";
 import { Register } from "../Authentication/Register";
+import EmployeeViews from "../Employees/EmployeeViews";
 
 
 function Recruitement() {
@@ -26,8 +27,13 @@ const[userType, setUserType] = useState(sessionStorage.getItem("userTypeKey"))
       <Register/>
       </Route>
 
+    {userType === "1" ? <RecruitersViews/>:""}
+
     {/* Checking if the userType is either Employer or Recruiter */}
-      {userType === "2" ? <EmployerViews/> : <RecruitersViews/>}
+      {userType === "2" ? <EmployerViews/> : ""}
+
+      {/* employee view */}
+      {userType === "3" ? <EmployeeViews/>:""}
      
     </div>
   );

@@ -29,6 +29,16 @@ const NavBar = () => {
             <Link to ="/settings">Settings</Link>
             </li>
 
+            <li>
+                <Link to="/post_job">Post Job</Link>
+            </li>
+
+            <li>
+                <Link to="/posted_jobs">Job Posted</Link>
+            </li>
+
+
+
             <li className="nav__item">
           <Button variant="contained" className="nav__button" onClick={() => {
               for (const key of sessionToRemove)
